@@ -1,0 +1,23 @@
+<nz-layout>
+  <nz-content>
+    <nz-breadcrumb>
+      <nz-breadcrumb-item>
+        <a>Clientes</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>Detalle</nz-breadcrumb-item>
+      <nz-breadcrumb-item>{{customerId}}</nz-breadcrumb-item>
+    </nz-breadcrumb>
+    <div class="inner-content">
+      <nz-descriptions nzTitle="Información cliente">
+        <nz-descriptions-item nzTitle="Nombre de usuario">{{customerInfo?.username}}</nz-descriptions-item>
+        <nz-descriptions-item nzTitle="Nombre real">{{customerInfo?.name}}</nz-descriptions-item>
+        <nz-descriptions-item nzTitle="Email">{{customerInfo?.email}}</nz-descriptions-item>
+        <nz-descriptions-item nzTitle="Teléfono">{{customerInfo?.phone}}</nz-descriptions-item>
+        <nz-descriptions-item nzTitle="Dirección">
+          {{customerInfo?.address.street}},  {{customerInfo?.address.suite}}, {{customerInfo?.address.city}}
+        </nz-descriptions-item>
+      </nz-descriptions>
+    </div>
+  </nz-content>
+  <nz-footer>Ejemplo de SSR ©2021 Implement By Checho</nz-footer>
+</nz-layout>
